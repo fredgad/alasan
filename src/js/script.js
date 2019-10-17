@@ -1,6 +1,6 @@
 
 $(function () {
-    
+
 // window.addEventListener('scroll', ()=> {
 //     if($(window).width() < 910) {
 //         let scrolled = window.pageYOffset || document.scrollTop;
@@ -18,5 +18,5 @@ $(function () {
 //     $('.nav-cont').css('top', $('.nav-bar').offset().top + 29 + 'px');
 // });
 
-alert('hi');
+
 });
