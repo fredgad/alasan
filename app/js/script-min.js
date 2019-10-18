@@ -1,1 +1,1 @@
-"use strict";$(function(){});
+"use strict";$(function(){window.addEventListener("scroll",function(){$(window).width()<1024&&((window.pageYOffset||document.scrollTop)>150?($(".header-bot-left").addClass("fixed"),$(".restaurant").hide()):($(".header-bot-left").removeClass("fixed"),$(".restaurant").show()))}),$(".navbar-button").click(function(t){$(".navbar-button").toggleClass("active"),$(".navbar").toggleClass("down")})});

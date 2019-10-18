@@ -1,16 +1,21 @@
 "use strict";
 
-$(function () {// window.addEventListener('scroll', ()=> {
-  //     if($(window).width() < 910) {
-  //         let scrolled = window.pageYOffset || document.scrollTop;
-  //         if (scrolled > 150) {
-  //         } else {
-  //         }
-  //    }
-  // });
-  // $('.nav-bar').click((e) => {
-  //     $('.nav-bar').toggleClass('active');
-  //     $('.nav-cont').toggleClass('down');
-  //     $('.nav-cont').css('top', $('.nav-bar').offset().top + 29 + 'px');
-  // });
+$(function () {
+  window.addEventListener('scroll', function () {
+    if ($(window).width() < 1024) {
+      var scrolled = window.pageYOffset || document.scrollTop;
+
+      if (scrolled > 150) {
+        $('.header-bot-left').addClass('fixed');
+        $('.restaurant').hide();
+      } else {
+        $('.header-bot-left').removeClass('fixed');
+        $('.restaurant').show();
+      }
+    }
+  });
+  $('.navbar-button').click(function (e) {
+    $('.navbar-button').toggleClass('active');
+    $('.navbar').toggleClass('down');
+  });
 });

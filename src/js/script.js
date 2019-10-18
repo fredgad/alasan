@@ -1,22 +1,23 @@
 
 $(function () {
 
-// window.addEventListener('scroll', ()=> {
-//     if($(window).width() < 910) {
-//         let scrolled = window.pageYOffset || document.scrollTop;
-//         if (scrolled > 150) {
-            
-//         } else {
-           
-//         }
-//    }
-// });
+window.addEventListener('scroll', ()=> {
+    if($(window).width() < 1024) {
+        let scrolled = window.pageYOffset || document.scrollTop;
+        if (scrolled > 150) {
+            $('.header-bot-left').addClass('fixed');
+            $('.restaurant').hide();
+        } else {
+            $('.header-bot-left').removeClass('fixed');
+            $('.restaurant').show();
+        }
+   }
+});
 
-// $('.nav-bar').click((e) => {
-//     $('.nav-bar').toggleClass('active');
-//     $('.nav-cont').toggleClass('down');
-//     $('.nav-cont').css('top', $('.nav-bar').offset().top + 29 + 'px');
-// });
+$('.navbar-button').click((e) => {
+    $('.navbar-button').toggleClass('active');
+    $('.navbar').toggleClass('down');
+});
 
 
 });
